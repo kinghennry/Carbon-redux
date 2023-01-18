@@ -1,0 +1,12 @@
+export { default as Acres } from "./Acres.svg";
+export { default as CO2 } from "./CO2.svg";
+export { default as Trees } from "./Trees.svg";
+export { default as Logo } from "./Logo.svg";
+export { default as Hero_img } from "./Hero.svg";
+export { default as Signin } from "./SIGN IN.svg";
+export { default as Wood } from "./Wood.jpg";
+export { default as Rain_forest } from "./Rain_forest.jpg";
+export { default as Treees } from "./Treees.jpg";
+export { default as Detail } from "./Detail.jpg";
+export { default as avatar } from "./avatar.svg";
+export { default as Drag } from "./Drag.svg";

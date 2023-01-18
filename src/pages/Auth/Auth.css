@@ -1,0 +1,28 @@
+.bg {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6) 20.43%,
+    rgba(253, 255, 253, 0.6976) 40.21%,
+    rgba(244, 253, 248, 0.7524) 51.32%,
+    rgba(231, 251, 238, 0.7966) 60.28%,
+    rgba(211, 248, 224, 0.8351) 68.11%,
+    rgba(185, 244, 206, 0.87) 75.18%,
+    rgba(154, 239, 184, 0.9023) 81.71%,
+    rgba(117, 233, 158, 0.9325) 87.85%,
+    rgba(73, 226, 127, 0.9611) 93.64%,
+    rgba(25, 218, 94, 0.9875) 98.98%,
+    #00d64c 101.53%
+  );
+  /* opacity: 0.79; */
+}
+
+.Snackbar_snackbar__text__1Hx2a {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.label_text {
+  @apply text-sm font-medium text-black;
+}
+.form_row {
+  @apply flex flex-col gap-4 md:flex-row;
+}

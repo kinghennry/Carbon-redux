@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+  backface-visibility: hidden;
+}
+
+:root {
+  --green: #008c36;
+  --font-poppins: "Poppins", sans-serif;
+  --font-sans: "Work Sans", sans-serif;
+  --bg-white: #f5f5f5;
+  --black: #010603;
+  --light-black: #3c3c3b;
+  --white: #ffffff;
+  --gray: #f9f9f9;
+}
+
+/* tailwind styles */
+html {
+  @apply scroll-smooth;
+}
+
+img {
+  @apply w-full block;
+}
+
+body {
+  @apply font-heading;
+}
+
+input,
+textarea,
+button,
+select,
+option {
+  @apply outline-none bg-none border-0 bg-transparent;
+}
+
+.db_header {
+  @apply text-black font-semibold md:text-2xl;
+}
+.text_sty {
+  @apply text-[#ffffff] font-light text-sm;
+}
+.container {
+  @apply my-0 mx-auto max-w-[95%] w-[1440px];
+}
+
+.space_sty {
+  @apply flex items-center justify-between;
+}
+.flex_sty {
+  @apply flex items-center;
+}
+.flex_Box {
+  @apply flex items-center justify-center;
+}
+.flex_Dir {
+  @apply flex flex-col;
+}
+
+.click_btn {
+  @apply bg-green text-white text-sm font-normal 
+  hover:text-green hover:bg-transparent transition duration-300 border-solid border border-green;
+}
+.header_sty {
+  @apply text-black font-medium text-4xl;
+}
+.bold_sty {
+  @apply border-solid border;
+}
+.sub_Header {
+  @apply font-semibold text-[40px];
+}
+.wht_sty {
+  @apply text-[#ffffff] text-base font-normal;
+}
+
+.db_icon {
+  @apply text-3xl;
+}
+.grid_sty {
+  @apply grid grid-cols-3;
+}
+
+.inputs {
+  @apply bg-cream flex w-full py-3.5 px-7 rounded-md text-sm text-[#4D4D4D] border-solid border border-[#CECECE] focus:outline-none focus:border-green  focus:border-solid focus:border;
+}
+
+.detail_text {
+  @apply w-1/3 text-xs font-normal text-[#949494] md:w-2/12 md:text-sm;
+}
+.detail_value {
+  @apply w-2/3 text-xs font-medium text-black md:text-sm;
+}
+.tables {
+  @apply overflow-x-scroll;
+}
+
+.text_ct {
+  @apply text-center;
+}
+.subText_sty {
+  @apply text-white font-light text-xs leading-[27px];
+}
+
+.user_search {
+  @apply bg-white border-solid border border-[#d3d3d3] text-sm py-2 px-5 text-[#898a8d] rounded md:w-2/3;
+}
+
+.dropdown {
+  @apply relative w-[100px] text-center flex items-center justify-center select-none md:w-[200px];
+}
+.dropdown_btn {
+  @apply flex px-4 py-2 bg-[#f9f9f9] z-10 rounded  cursor-pointer text-green items-center justify-between md:py-3 md:px-5;
+}
+/* z-10 */
+.select_text {
+  @apply hidden md:flex md:font-semibold  md:mr-3;
+}
+.select-icon {
+  @apply text-base md:text-2xl;
+}
+
+.dropdown_content {
+  @apply absolute bg-[#f9f9f9] items-start justify-start z-20  rounded w-[150%]  cursor-pointer text-green top-[150%] p-[6px] mr-10 md:p-[15px] md:w-full;
+}
+
+.dropdown_item {
+  @apply p-[10px] cursor-pointer;
+}
+.new_search {
+  @apply bg-white border-solid border border-[#d3d3d3] text-sm py-2 px-5 text-[#898a8d] rounded lg:w-[40%];
+}
+
+table {
+  @apply w-full border-collapse text-left table-fixed border-spacing-x-0 border-spacing-y-1 min-w-[800px] text-center lg:min-w-[1000px];
+}
+
+thead th {
+  @apply py-3.5 text-xs font-medium text-grey border-b-subtle border-solid border-b border-[#efefef];
+}
+tbody tr td {
+  @apply text-xs text-center font-medium text-black mx-5 py-2.5 border-transparent relative w-full leading-6;
+}
+html {
+  @apply scroll-smooth;
+}
+
+/* extras */
+
+/* animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fade-in {
+  animation: fade-in 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.slide-in {
+  animation: slide-in 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+
+.footer_input input::placeholder {
+  color: #ffffff;
+}
+.div_sty {
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.rel {
+  position: relative;
+}
+
+.auth_desc > p {
+  font-family: "Work Sans", sans-serif !important;
+}
+
+@media (max-width: 340px) {
+  .customer_db {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}

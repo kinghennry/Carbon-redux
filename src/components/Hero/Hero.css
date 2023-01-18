@@ -1,0 +1,45 @@
+.hero {
+  background: var(--gray);
+}
+
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+
+.hero_details h1 {
+  font-size: 52px;
+  line-height: 69px;
+}
+
+/* screens */
+@media (max-width: 650px) {
+  .hero_details h1 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+@media (max-width: 470px) {
+  .hero_details h1 {
+    line-height: 40px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer_links {
+    gap: 7px !important;
+  }
+}
+
+.auth_desc > p {
+  font-family: "Work Sans", sans-serif !important;
+}
+
+@media (max-width: 340px) {
+  .customer_db {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
